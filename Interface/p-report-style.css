@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('images/background.jpg'); /* Add background image */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the image */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    width: 100%;
+    margin: 20px;
+    overflow: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.report-section {
+    margin-bottom: 20px;
+}
+
+.report-section h2 {
+    margin-bottom: 10px;
+}
+
+#upload-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#upload-form label,
+#upload-form input,
+#upload-form button {
+    margin-bottom: 10px;
+}
+
+.view-reports-button {
+    display: block;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.view-reports-button:hover {
+    background-color: #0056b3;
+}
+
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.report-list {
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fafafa;
+}
+
+.report-item {
+    background-color: #eaeaea;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}

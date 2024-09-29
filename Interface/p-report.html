@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Reports</title>
+    <link rel="stylesheet" href="p-report-style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Patient Reports</h1>
+
+        <div class="report-section">
+            <h2>Upload a New Report</h2>
+            <form id="upload-form">
+                <label for="report-file">Choose Report File:</label>
+                <input type="file" id="report-file" name="report-file" accept=".pdf, .doc, .docx, .jpg, .png">
+                <br><br>
+                <button type="submit">Upload</button>
+            </form>
+        </div>
+
+        <div class="report-section">
+            <h2>View Previous Reports</h2>
+            <a href="reports-list.html" class="view-reports-button">View Previous Reports</a>
+        </div>
+
+        <a href="p-interface.html" class="back-link">Back to Home</a>
+    </div>
+
+    <script src="p-report.js"></script>
+</body>
+
+</html>

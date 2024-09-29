@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WellnessFinder : Find a Test Centre</title>
+    <link rel="stylesheet" href="find-test-centre-style.css">
+    <script src="find-test-centre-script.js" defer></script>
+</head>
+
+<body>
+    <img src="Images/WellnessFinder Logo 2.png" alt="logo" id="logo">
+    <div class="container">
+        <h1>Find a Test Centre</h1>
+        <form id="findTestCentreForm" onsubmit="return findTestCentre(event)">
+            <label for="location">Location:</label>
+            <input type="text" name="location" id="location" placeholder="Enter location"><br><br>
+
+            <label for="testType">Test Type:</label>
+            <select name="testType" id="testType">
+                <option value="Any">Any</option>
+                <option value="Blood Test">Blood Test</option>
+                <option value="X-Ray">X-Ray</option>
+                <option value="MRI">MRI</option>
+                <option value="Ultrasound">Ultrasound</option>
+                <!-- Add more test types as needed -->
+            </select><br><br>
+
+            <input type="submit" value="Find Test Centre">
+        </form>
+
+        <div id="results">
+            <!-- Results will be displayed here -->
+        </div>
+    </div>
+</body>
+
+</html>

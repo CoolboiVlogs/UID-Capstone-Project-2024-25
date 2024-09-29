@@ -1,0 +1,60 @@
+body {
+    background-image: url('images/background.jpg'); /* Add background image */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the image */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#logo {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    height: 20em;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.icon-box {
+    background-image: url('images/background.jpg'); /* Add background image */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the image */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 150px;
+    margin: 20px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.icon-box img {
+    width: 80px;
+    height: 80px;
+}
+
+.icon-box p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.icon-box:hover {
+    transform: translateY(-10px);
+}
+
+a{
+    color: black;
+    font-weight: bold;
+}

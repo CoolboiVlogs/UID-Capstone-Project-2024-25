@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WellnessFinder : Find a Blood Bank</title>
+    <link rel="stylesheet" href="find-blood-bank-style.css">
+    <script src="find-blood-bank-script.js"></script>
+</head>
+
+<body>
+    <img src="Images/WellnessFinder Logo 2.png" alt="logo" id="logo">
+    <div class="container">
+        <h1>Find a Blood Bank</h1>
+        <form id="findBloodBankForm" onsubmit="return findBloodBank(event)">
+            <label for="location">Location:</label>
+            <input type="text" name="location" id="location" placeholder="Enter location"><br><br>
+
+            <label for="bloodType">Blood Type:</label>
+            <select name="bloodType" id="bloodType">
+                <option value="Any">Any</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+            </select><br><br>
+
+            <input type="submit" value="Find Blood Bank">
+        </form>
+
+        <div id="results">
+            <!-- Results will be displayed here -->
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+/* Reset some basic elements */
+body, h1, label, input, select, form, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("Images/background.jpg");
+    background-size: cover;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#logo {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    height: 20em;
+}
+
+.container {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    background: rgba(255, 255, 255, 0.8); /* Slightly opaque background for better readability */
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #C74C87;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+select {
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+select:focus {
+    border-color: #4a2ff9;
+}
+
+input[type="submit"] {
+    background-color: #4a2ff9;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #3b1e9b;
+    transform: scale(1.05);
+}
+
+#results {
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.service-card {
+    background: #e7f5e6;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border-left: 4px solid #4CAF50;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.call {
+    background-color: #4CAF50; /* Green for call button */
+}
+
+.call:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.help {
+    background-color: #f44336; /* Red for help button */
+}
+
+.help:hover {
+    background-color: #e53935;
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

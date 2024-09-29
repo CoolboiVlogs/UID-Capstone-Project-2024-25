@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WellnessFinder : Find a Hospital</title>
+    <link rel="stylesheet" href="find-hospital-style.css">
+    <script src="find-hospital-script.js"></script>
+</head>
+
+<body>
+    <img src="Images/WellnessFinder Logo 2.png" alt="logo" id="logo">
+    <div class="container">
+        <h1>Find a Hospital</h1>
+        <form id="findHospitalForm" onsubmit="return findHospital(event)">
+            <label for="location">Location:</label>
+            <input type="text" name="location" id="location" placeholder="Enter location"><br><br>
+
+            <label for="specialty">Specialty:</label>
+            <select name="specialty" id="specialty">
+                <option value="General">General</option>
+                <option value="Pediatrics">Pediatrics</option>
+                <option value="Cardiology">Cardiology</option>
+                <option value="Orthopedics">Orthopedics</option>
+                <option value="Neurology">Neurology</option>
+                <!-- Add more specialties as needed -->
+            </select><br><br>
+
+            <input type="submit" value="Find Hospital">
+        </form>
+
+        <div id="results">
+            <!-- Results will be displayed here -->
+        </div>
+    </div>
+</body>
+
+</html>
